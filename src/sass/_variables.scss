@@ -1,0 +1,30 @@
+// Theme Colors
+$color-white: #fff;
+$color-black: #222;
+
+$color-gray: #b4b4b4;
+$color-gray-lighter: #f4f4f4;
+$color-gray-darker: #888;
+
+$color-blue: #2364da;
+$color-blue-darker: #083681;
+$color-blue-lighter: #5b81bf;
+
+$color-teal: #91dfdf;
+
+// Action Colors
+$color-primary: $color-blue;
+$color-primary-darker: darken($color-primary, 5%);
+$color-primary-lighter: lighten($color-primary, 5%);
+
+$color-secondary: $color-teal;
+$color-secondary-darker: darken($color-secondary, 5%);
+$color-secondary-lighter: lighten($color-secondary, 5%);
+
+// Document Settings
+$document-font-size: 100%;
+$document-line-height: 1;
+$document-font-stack: Helvetica, Arial, Sans-Serif;
+$document-font-color: $color-black;
+
+$pad: 1rem;

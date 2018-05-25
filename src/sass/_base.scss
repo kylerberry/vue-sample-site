@@ -1,0 +1,38 @@
+@import "variables";
+@import "fonts";
+@import "typography";
+@import "./vendor/normalize";
+@import "mixins";
+
+*:not(body),
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    @include font('regular');
+    line-height: $document-line-height;
+    font-size: $document-font-size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $color-white;
+    color: $color-black;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+.container {
+    max-width: 72rem;
+    margin: 0 auto;
+    @include clearfix();
+}

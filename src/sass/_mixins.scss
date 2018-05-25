@@ -1,0 +1,27 @@
+@import 'variables';
+
+@mixin font($type) {
+    @if $type == 'regular' {
+        font-family: 'OpenSans-Regular', $document-font-stack;
+    }
+    @if $type == 'bold' {
+        font-family: 'OpenSans-Bold', $document-font-stack;
+    }
+    @if $type == 'light' {
+        font-family: 'OpenSans-Light', $document-font-stack;
+    }
+    @if $type == 'xbold' {
+        font-family: 'OpenSans-ExtraBold', $document-font-stack;
+    }
+    @if $type == 'italic' {
+        font-family: 'OpenSans-Italic', $document-font-stack;
+    }
+}
+
+@mixin clearfix() {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
