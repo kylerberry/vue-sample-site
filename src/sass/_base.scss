@@ -23,6 +23,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 
     &:hover,
     &:focus,
@@ -31,8 +32,14 @@ a {
     }
 }
 
+p {
+    margin-top: 0;
+}
+
 .container {
-    max-width: 72rem;
+    max-width: $max-width;
     margin: 0 auto;
+    padding-left: $pad;
+    padding-right: $pad;
     @include clearfix();
 }
