@@ -90,7 +90,7 @@ export default {
   flex-wrap: wrap;
 
   &__item {
-    width: 33.33%;
+    width: 32%;
   }
 }
 </style>
