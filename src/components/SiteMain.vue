@@ -1,7 +1,11 @@
 <template>
 <div class="site-main">
     <div class="container">
-      <DealerFilters :filters="filters" @filter-select="onSelectedFilter"/>
+      <DealerFilters
+        :data="dealerData"
+        :filters="filters"
+        @filter-select="onSelectedFilter"
+        />
       <ul class="dealer-list">
           <li class="dealer-list__item"
             v-for="dealer in dealers"
@@ -57,8 +61,12 @@ export default {
     getDealersAsync: async function () {
       this.dealerData = await getDealers()
     },
-    onSelectedFilter: function (filters) {
-      this.selectedFilters = filters
+    onSelectedFilter: function (filter) {
+      if (filter.value) {
+        this.selectedFilters.push(filter.key)
+      } else {
+        this.selectedFilters.splice(this.selectedFilters.indexOf(filter.key), 1)
+      }
     },
     getFilteredDealers: function (dealers, filters) {
       return dealers.filter(dealer => {
@@ -81,6 +89,12 @@ export default {
 <style lang="scss">
 @import "../sass/variables";
 
+.site-main {
+  background: url('../assets/images/water-image.png') 0 4px no-repeat;
+  background-size: contain;
+  padding-top: 7rem;
+}
+
 .dealer-list {
   display: flex;
   flex-direction: wrap;
@@ -88,6 +102,7 @@ export default {
   list-style: none;
   padding: 0;
   flex-wrap: wrap;
+  padding: 0;
 
   &__item {
     width: 32%;

@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="header-main">
-    <div class="container">
+    <div class="container flex-container">
       <SiteLogo />
       <SiteNav />
     </div>
@@ -30,7 +30,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../sass/base";
+@import "../sass/variables";
+@import "../sass/mixins";
 
 .header-top {
   background-color: $color-blue-darker;
@@ -39,6 +40,7 @@ export default {
 
 .header-main {
   box-shadow: 0 2px 6px -2px $color-black;
+  padding: .75rem 0;
 }
 
 .link-list {
@@ -59,4 +61,10 @@ export default {
     color: $color-white;
   }
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 </style>

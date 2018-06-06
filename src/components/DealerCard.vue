@@ -89,6 +89,7 @@ export default {
   box-shadow: 0 1px 3px $color-gray-darker;
   border-radius: $border-radius;
   margin-bottom: $pad;
+  background-color: $color-white;
 }
 
 .header {
