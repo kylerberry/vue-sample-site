@@ -1,4 +1,4 @@
-# rv-sample
+# vue-sample-site
 
 > A Vue.js project
 
