@@ -11,8 +11,7 @@
           @input="field.value = $event"
           v-if="field.type !== 'switch'" />
         <inputSwitch
-          v-if="field.type == 'switch'"
-          @input="field.value = $event"
+          v-if="field.type === 'switch'"
           :name="field.name"
           :label="field.label"
           onLabel="Yes"
@@ -72,7 +71,6 @@ export default {
           type: 'switch',
           name: 'own_pool',
           label: 'Do you currently own a pool or spa?',
-          required: false,
           value: true
         }
       ]

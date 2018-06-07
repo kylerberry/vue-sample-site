@@ -22,7 +22,7 @@
 
 <script>
 import DealerFilters from './DealerFilters'
-import { getDealers } from '../services/dealer'
+import dealerData from '../services/dealer'
 import DealerCard from './DealerCard'
 import Dialog from './Dialog'
 import EmailDialog from './EmailDialog'
@@ -44,7 +44,7 @@ export default {
         { value: 'commercial', label: 'Commercial' }
       ],
       selectedFilters: [],
-      dealerData: {},
+      dealerData: dealerData,
       recipient: null,
       showDialog: false
     }
@@ -58,9 +58,6 @@ export default {
     }
   },
   methods: {
-    getDealersAsync: async function () {
-      this.dealerData = await getDealers()
-    },
     onSelectedFilter: function (filter) {
       if (filter.value) {
         this.selectedFilters.push(filter.key)
@@ -79,9 +76,6 @@ export default {
       this.recipient = dealer
       this.showDialog = true
     }
-  },
-  created: function () {
-    this.getDealersAsync()
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
 <transition name="dialog" class="dialog">
-  <div class="dialog__mask" @click="close">
+  <div class="dialog__mask">
     <div class="dialog__wrapper">
       <div class="dialog__container">
         <a href="" @click="close" class="ss-delete dialog__close"></a>
