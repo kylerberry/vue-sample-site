@@ -14,9 +14,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../sass/media-queries";
+
 .site-logo {
   float: left;
+  margin: 0;
   
+  @include for-tablet-landscape-up() {
+    margin: .67rem 0;
+  }
+
   &__name {
     text-indent: -9999px;
     float: left;

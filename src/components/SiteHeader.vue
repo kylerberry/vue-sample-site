@@ -46,7 +46,11 @@ export default {
 
 .header-main {
   box-shadow: 0 2px 6px -2px $color-black;
-  padding: .75rem 0;
+  padding: 0;
+
+  @include for-tablet-landscape-up() {
+    padding: .75rem 0;
+  }
 }
 
 .link-list {

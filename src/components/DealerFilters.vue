@@ -62,6 +62,7 @@ export default {
   @include for-tablet-landscape-up() {
     margin: inherit;
     text-align: center;
+    border-radius: $border-radius;
   }
 
   &__results {
