@@ -4,23 +4,23 @@ export const getDealers = async () => {
     return JSON.parse(response)
   } catch (err) {
     console.log(err)
-    return
   }
 }
 
 const get = (path) => new Promise((resolve, reject) => {
   var httpRequest
-  
+
   httpRequest = new XMLHttpRequest()
   if (!httpRequest) {
-    return reject('Cannot create an XMLHTTP instance.')
+    return reject(new Error('Cannot create an XMLHTTP instance.'))
   }
+
   httpRequest.onreadystatechange = () => {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
       if (httpRequest.status === 200) {
         resolve(httpRequest.responseText)
       } else {
-        reject('There was a problem with the request.')
+        reject(new Error('There was a problem with the request.'))
       }
     }
   }

@@ -45,7 +45,7 @@ export default {
     top: -9999px;
     left: -9999px;
   }
-  
+
   &__label {
     cursor: pointer;
 

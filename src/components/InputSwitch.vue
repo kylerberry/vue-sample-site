@@ -9,14 +9,14 @@
       {{onLabel}}
     </label>
     <input class="toggle__input" type="radio" :value="true" :name="`${name}-on`" :id="`${name}-on`" v-model="model"/>
-    
+
     <label class="toggle__label"
       :class="{'toggle__label--active' : !model}"
       :for="`${name}-off`">
       {{offLabel}}
     </label>
     <input class="toggle__input" type="radio" :value="false" :name="`${name}-off`" :id="`${name}-off`" v-model="model"/>
-    
+
   </div>
 </div>
 </template>
@@ -75,7 +75,7 @@ export default {
     transition: color .2s, background-color .2s;
     min-width: 3.75rem;
     margin-right: .25rem;
-    
+
     &--active {
       background-color: $color-teal-darker;
       color: $color-white;
@@ -90,4 +90,3 @@ export default {
   }
 }
 </style>
-

@@ -81,7 +81,7 @@ export default {
     text-align: center;
     line-height: 1.35rem;
     @include font('light');
-    
+
     &--valid {
       box-shadow: 0 0 0 2px $color-teal-darker;
       color: $color-teal-darker;
@@ -98,4 +98,3 @@ export default {
   }
 }
 </style>
-

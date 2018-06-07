@@ -40,7 +40,7 @@ export default {
       showFilters: false
     }
   },
-  computed:{
+  computed: {
     total: function () {
       return this.data && this.data.dealers ? this.data.dealers.length : 0
     }
@@ -149,7 +149,7 @@ export default {
       display: inline-block;
       margin: 0 $pad;
       vertical-align: middle;
-      
+
       &:last-child {
         margin-right: 0;
       }

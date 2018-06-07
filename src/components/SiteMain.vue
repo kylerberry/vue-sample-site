@@ -72,7 +72,7 @@ export default {
       return dealers.filter(dealer => {
         let certs = dealer.data.certifications.join().toLowerCase()
         let found = filters.reduce((acc, filter) => acc + Number(certs.indexOf(filter) !== -1), 0)
-        return found == filters.length
+        return found === filters.length
       })
     },
     openDialog: function (dealer) {

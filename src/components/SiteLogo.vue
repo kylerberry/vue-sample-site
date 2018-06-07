@@ -19,7 +19,7 @@ export default {
 .site-logo {
   float: left;
   margin: 0;
-  
+
   @include for-tablet-landscape-up() {
     margin: .67rem 0;
   }

@@ -14,7 +14,7 @@
       </li>
     </ul>
   </div>
-  
+
   <div class="mobile-nav">
     <a class="primary-link" href="">
       <i class="ss-location primary-link__icon"></i>
@@ -74,7 +74,7 @@ export default {
 
 .desktop-nav {
   display: none;
-  
+
   @include for-tablet-landscape-up() {
     display: inherit;
   }
@@ -92,7 +92,7 @@ export default {
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
   &__item {
     display: inline-block;
 

@@ -23,7 +23,7 @@ import EmailForm from './EmailForm'
 export default {
   name: 'EmailDialog',
   components: { Dialog, EmailForm },
-  props: ['recipient'],
+  props: ['recipient']
 }
 </script>
 

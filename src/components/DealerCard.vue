@@ -56,10 +56,10 @@ export default {
     }
     data.phoneHref = `tel:+${data.phone1.replace(/-/g, '')}`
     data.certIcons = {
-      "Installation Pro" : "ss-star",
-      "Commercial Pro" : "ss-users",
-      "Residential Pro" : "ss-home",
-      "Service Pro" : "ss-settings"
+      'Installation Pro': 'ss-star',
+      'Commercial Pro': 'ss-users',
+      'Residential Pro': 'ss-home',
+      'Service Pro': 'ss-setting'
     }
     return data
   },
@@ -68,7 +68,7 @@ export default {
       this.$emit('email-dialog', this.dealer.data)
     },
     getHours: function (hours) {
-      if (hours == '') {
+      if (hours === '') {
         return '- CLOSED'
       } else if (hours.match(/^[0-9]{1,2}:[0-9]{2}[a|p][m]\s-\s[0-9]{1,2}:[0-9]{2}[a|p][m]$/)) {
         return hours
@@ -122,7 +122,7 @@ export default {
       padding: .33rem;
       margin-right: .5rem;
     }
-    
+
     &__link {
       color: $color-black;
       font-size: 1.35rem;
