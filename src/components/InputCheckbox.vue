@@ -48,7 +48,6 @@ export default {
   
   &__label {
     cursor: pointer;
-    margin-right: $pad;
 
     &::before {
       content: '';
@@ -58,7 +57,7 @@ export default {
       background: $color-white;
       box-shadow: inset 0 0 0 1px $color-gray;
       border-radius: $border-radius;
-      margin-right: $pad/2;
+      margin-right: $pad/4;
       vertical-align: top;
     }
 

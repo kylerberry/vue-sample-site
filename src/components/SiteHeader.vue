@@ -32,10 +32,16 @@ export default {
 <style lang="scss" scoped>
 @import "../sass/variables";
 @import "../sass/mixins";
+@import "../sass/media-queries";
 
 .header-top {
   background-color: $color-blue-darker;
   overflow: hidden;
+  display: none;
+
+  @include for-desktop-up() {
+    display: inherit;
+  }
 }
 
 .header-main {

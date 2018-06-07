@@ -88,6 +88,7 @@ export default {
 
 <style lang="scss">
 @import "../sass/variables";
+@import "../sass/media-queries";
 
 .site-main {
   background: url('../assets/images/water-image.png') 0 4px no-repeat;
@@ -105,7 +106,15 @@ export default {
   padding: 0;
 
   &__item {
-    width: 32%;
+    width: 100%;
+
+    @include for-tablet-portrait-up() {
+      width: 49%;
+    }
+
+    @include for-desktop-up() {
+      width: 32%
+    }
   }
 }
 </style>
