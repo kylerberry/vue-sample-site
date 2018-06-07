@@ -92,8 +92,11 @@ export default {
 
 .site-main {
   background: url('../assets/images/water-image.png') 0 4px no-repeat;
-  background-size: contain;
-  padding-top: 7rem;
+  padding-top: 8rem;
+
+  @include for-desktop-up {
+    background-size: contain;
+  }
 }
 
 .dealer-list {

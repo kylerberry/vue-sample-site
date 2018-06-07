@@ -210,7 +210,7 @@ export default {
 
 .footer {
   background: $color-gray-lighter;
-  padding: 1.5rem 2rem .75rem;
+  padding: 1.5rem 1rem .75rem;
   min-height: 6rem;
 }
 </style>

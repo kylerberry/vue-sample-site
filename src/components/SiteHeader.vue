@@ -69,6 +69,7 @@ export default {
 
   &__link {
     color: $color-white;
+    font-size: .8rem;
   }
 }
 
